@@ -289,6 +289,10 @@
   <div class="confetti" id="confetti"></div>
 
   <script>
+        // TEMPORARY: Skip countdown and show birthday page directly
+    document.getElementById('countdownSection').style.display = 'none';
+    document.getElementById('mainContent').classList.add('active');
+    
     // Birthday date: November 12, 2025 at midnight
     const birthdayDate = new Date('2025-11-12T00:00:00').getTime();
 
